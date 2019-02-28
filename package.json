@@ -1,5 +1,5 @@
 {
-  "name": "react-action-types",
+  "name": "redux-action-type-generator",
   "version": "1.0.0",
   "description": "Generator to create unique redux action names",
   "main": "index.js",
