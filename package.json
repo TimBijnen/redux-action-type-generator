@@ -1,0 +1,17 @@
+{
+  "name": "react-action-types",
+  "version": "1.0.0",
+  "description": "Generator to create unique redux action names",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Tim Bijnen",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  },
+  "dependencies": {
+    "uniqid": "^5.0.3"
+  }
+}
