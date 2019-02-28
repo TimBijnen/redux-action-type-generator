@@ -6,8 +6,15 @@ describe( "Test", () => {
         expect( types ).toHaveProperty( "LOAD" );
         expect( types ).toHaveProperty( "LOAD_SUCCESS" );
 	expect( types ).toHaveProperty( "LOAD_ERROR" );
-	console.log(types)    
     } );
+
+	it( "can generate unique action types", ( ) => {
+        const types = actionType( [ "LOAD" ], [ "FAIL", "SUCCEEDED" ] );
+        expect( types ).toHaveProperty( "LOAD" );
+        expect( types ).toHaveProperty( "LOAD_SUCCEEDED" );
+	expect( types ).toHaveProperty( "LOAD_FAIL" );
+    } );
+
 
     it( "can generate unique action types", ( ) => {
         const types = actionType( [ "LOAD" ], [] );
